@@ -2,7 +2,7 @@
  A date picker view to choose date and time in Objective-C. it support iOS 8.0 later and it can run in any device,such as iPhone 4~iPhone X
 
 
-#代码如下:
+# 集成代码如下
 
 FAZTimerPicker *datePicker = [[FAZTimerPicker alloc]init];
 
