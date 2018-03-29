@@ -3,7 +3,7 @@
 
 
 # 集成代码如下
-
+``` Objective-C
 FAZTimerPicker *datePicker = [[FAZTimerPicker alloc]init];
 
 datePicker.minLimitDate = [NSDate dateWithTimeIntervalSinceNow:7200];
@@ -19,7 +19,7 @@ datePicker.commitBlock = ^(NSDate *date,NSString *dateString)
 
 [datePicker show];
 
-
+```
 
 # screenShots
 ![Alt text](https://github.com/FicentAlanZeng/TimePicker/blob/master/image.gif?raw=true)
