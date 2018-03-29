@@ -40,7 +40,7 @@ datePicker.commitBlock = ^(NSDate *date,NSString *dateString)
     "
 
   s.homepage     = "https://github.com/FicentAlanZeng/TimePicker"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  s.screenshots  = "https://github.com/FicentAlanZeng/TimePicker/blob/master/image.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
