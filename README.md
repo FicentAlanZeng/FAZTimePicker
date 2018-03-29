@@ -18,3 +18,8 @@ datePicker.commitBlock = ^(NSDate *date,NSString *dateString)
 };
 
 [datePicker show];
+
+
+
+# screenShots
+https://github.com/FicentAlanZeng/TimePicker/blob/master/image.gif?raw=true
