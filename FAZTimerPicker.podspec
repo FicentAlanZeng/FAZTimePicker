@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FAZTimerPicker"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A date picker view to choose date and time in Objective-C. it support iOS 8.0 later and it can run in any device,such as iPhone 4~iPhone X"
 
   # This description is used to generate tags and improve search results.
@@ -105,7 +105,7 @@ datePicker.commitBlock = ^(NSDate *date,NSString *dateString)
   s.source_files  = "lib/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "lib/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
