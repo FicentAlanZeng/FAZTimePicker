@@ -11,7 +11,7 @@
 @interface FAZTimerPicker : UIView
 /**     date
  *      current date
- *      当前选中的date
+ *      当前选中的date,默认当前系统时间
  */
 @property (nonatomic, strong) NSDate *date;
     
@@ -35,7 +35,7 @@
  *      选择后点击完成触发
  *      dateString与fomatter有关，默认fomatter为'yyyy-MM-dd HH:mm'
  */
-@property (nonatomic, copy) void (^commitBlock)(NSDate *,NSString *dateString);
+@property (nonatomic, copy) void (^commitBlock)(NSDate *date,NSString *dateString);
 
 /**     show
  *      控件显示

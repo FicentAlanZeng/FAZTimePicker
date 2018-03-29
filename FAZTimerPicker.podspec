@@ -24,7 +24,20 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "时间选择器，可适用iOS 8 以上系统，iPhone4 ~ iPhone X 的机型适配"
+s.description  = "时间选择器，可适用iOS 8 以上系统，iPhone4 ~ iPhone X 的机型适配，只要两句代码，您可以轻松简便的实现时间选择，此控件还能根据您想要的结果自行设定输出结果的格式，无需额外的格式装换，实现代码如下:
+
+FAZTimerPicker *datePicker = [[FAZTimerPicker alloc]init];
+datePicker.minLimitDate = [NSDate dateWithTimeIntervalSinceNow:(2*60)*60];
+datePicker.maxLimitDate = [NSDate dateWithTimeIntervalSinceNow:(1024*60)*60];
+datePicker.dateOutputFomatterString = @'yyyy-MM-dd HH:mm';
+datePicker.commitBlock = ^(NSDate *date,NSString *dateString)
+{
+//        self.label.text = dateString;
+};
+[datePicker show];
+
+
+    "
 
   s.homepage     = "https://github.com/FicentAlanZeng/TimePicker"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -66,7 +79,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+  # s.ios.deployment_target = "8.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"

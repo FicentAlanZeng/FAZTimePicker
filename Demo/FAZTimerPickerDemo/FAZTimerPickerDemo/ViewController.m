@@ -29,7 +29,7 @@
     datePicker.dateOutputFomatterString = @"yyyy-MM-dd HH:mm";
     datePicker.commitBlock = ^(NSDate *date,NSString *dateString)
     {
-        self.label.text = dateString;
+//        self.label.text = dateString;
     };
     [datePicker show];
 }
