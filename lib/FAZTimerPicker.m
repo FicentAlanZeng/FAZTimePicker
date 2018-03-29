@@ -1,15 +1,17 @@
 //
 //  STDatePickerView.m
-//  TicketingSystem
+//  FAZTimerPickerDemo
 //
-//  Created by imac on 2017/10/17.
-//  Copyright © 2017年 JinChuang Technology Inc. All rights reserved.
+//  Created by imac on 2018/3/29.
+//  Copyright © 2018年 FicentAlanZeng. All rights reserved.
 //
 
-#import "STDatePickerView.h"
-#import "AppDelegate.h"
+#import "FAZTimerPicker.h"
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 #define kContannerH 247.0
-@interface STDatePickerView ()
+@interface FAZTimerPicker ()
 
 @property (nonatomic, strong) UIView *containner;
 
@@ -18,14 +20,14 @@
 @property (nonatomic, strong) UIDatePicker *datePicker;
 
 @end
-@implementation STDatePickerView
-
+@implementation FAZTimerPicker
 
 - (instancetype)init
 {
     if (self = [super init])
     {
         [self setup];
+        self.dateOutputFomatterString = @"yyyy-MM-dd HH:mm";
     }
     return  self;
 }
@@ -43,6 +45,8 @@
 
 - (void)setup
 {
+    CGFloat SCREEN_WIDTH = [[UIScreen mainScreen] bounds].size.width;
+    CGFloat SCREEN_HEIGHT = [[UIScreen mainScreen] bounds].size.height;
     
     self.backgroundColor = [UIColor clearColor];
     
@@ -59,6 +63,7 @@
     
     _containner.backgroundColor = [UIColor whiteColor];
     _containner.userInteractionEnabled = YES;
+    _containner.clipsToBounds = YES;
     
     
     UIView *btnContanner = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 50)];
@@ -95,7 +100,9 @@
     [self dismiss:nil];
     if (_commitBlock)
     {
-        _commitBlock(_datePicker.date);
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:self.dateOutputFomatterString];
+        _commitBlock(_datePicker.date,[formatter stringFromDate:_datePicker.date]);
     }
 }
 
@@ -106,12 +113,12 @@
 
 - (void)show
 {
-    UIWindow *window = ((AppDelegate *)[UIApplication sharedApplication].delegate).window;
+    UIWindow *window = ([UIApplication sharedApplication].delegate).window;
     self.frame = window.bounds;
     [window addSubview:self];
     [UIView animateWithDuration:0.3 animations:^{
         CGRect newF = _containner.frame;
-        newF.origin.y = SCREEN_HEIGHT -  newF.size.height;
+        newF.origin.y = [[UIScreen mainScreen] bounds].size.height -  newF.size.height;
         _containner.frame = newF;
     }];
 }
@@ -121,7 +128,7 @@
 {
     [UIView animateWithDuration:0.3 animations:^{
         CGRect newF = _containner.frame;
-        newF.origin.y = SCREEN_HEIGHT;
+        newF.origin.y = [[UIScreen mainScreen] bounds].size.height;
         _containner.frame = newF;
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
