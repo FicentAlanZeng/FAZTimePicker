@@ -22,4 +22,4 @@ datePicker.commitBlock = ^(NSDate *date,NSString *dateString)
 
 
 # screenShots
-https://github.com/FicentAlanZeng/TimePicker/blob/master/image.gif?raw=true
+![Alt text](https://github.com/FicentAlanZeng/TimePicker/blob/master/image.gif?raw=true)
