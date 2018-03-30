@@ -1,5 +1,5 @@
 # FAZTimePicker
- A date picker view to choose date and time in Objective-C. it support iOS 8.0 later and it can run in any device,such as iPhone 4~iPhone X
+ A date picker view to choose date and time in Objective-C. it supports iOS 8.0 later and it can run in any devices,such as iPhone 4~iPhone X
 
 
 # 集成代码如下

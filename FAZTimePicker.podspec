@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "FAZTimePicker"
   s.version      = "1.2.0"
-  s.summary      = "A date picker view to choose date and time in Objective-C. it support iOS 8.0 later and it can run in any device,such as iPhone 4~iPhone X"
+  s.summary      = "A date picker view to choose date and time in Objective-C. it supports iOS 8.0 later and it can run in any devices,such as iPhone 4~iPhone X"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
