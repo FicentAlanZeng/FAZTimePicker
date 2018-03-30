@@ -1,6 +1,6 @@
 //
-//  FAZTimerPicker.h
-//  FAZTimerPickerDemo
+//  FAZTimePicker.h
+//  FAZTimePickerDemo
 //
 //  Created by imac on 2018/3/29.
 //  Copyright © 2018年 FicentAlanZeng. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FAZTimerPicker : UIView
+@interface FAZTimePicker : UIView
 /**     date
  *      current date
  *      当前选中的date,默认当前系统时间

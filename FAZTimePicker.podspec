@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint FAZTimerPicker.podspec' to ensure this is a
+#  Be sure to run `pod spec lint FAZTimePicker.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "FAZTimerPicker"
-  s.version      = "1.0.0"
+  s.name         = "FAZTimePicker"
+  s.version      = "1.2.0"
   s.summary      = "A date picker view to choose date and time in Objective-C. it support iOS 8.0 later and it can run in any device,such as iPhone 4~iPhone X"
 
   # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
 s.description  = "时间选择器，可适用iOS 8 以上系统，iPhone4 ~ iPhone X 的机型适配，只要两句代码，您可以轻松简便的实现时间选择，此控件还能根据您想要的结果自行设定输出结果的格式，无需额外的格式装换，实现代码如下:
 
-FAZTimerPicker *datePicker = [[FAZTimerPicker alloc]init];
+FAZTimePicker *datePicker = [[FAZTimePicker alloc]init];
 datePicker.minLimitDate = [NSDate dateWithTimeIntervalSinceNow:(2*60)*60];
 datePicker.maxLimitDate = [NSDate dateWithTimeIntervalSinceNow:(1024*60)*60];
 datePicker.dateOutputFomatterString = @'yyyy-MM-dd HH:mm';

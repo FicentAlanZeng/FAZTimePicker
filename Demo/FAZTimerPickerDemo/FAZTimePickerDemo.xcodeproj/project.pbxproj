@@ -13,7 +13,7 @@
 		88867CFC206C898500FD5443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88867CFB206C898500FD5443 /* Assets.xcassets */; };
 		88867CFF206C898500FD5443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88867CFD206C898500FD5443 /* LaunchScreen.storyboard */; };
 		88867D02206C898500FD5443 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88867D01206C898500FD5443 /* main.m */; };
-		88867D0C206C89CF00FD5443 /* FAZTimerPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 88867D0A206C89CF00FD5443 /* FAZTimerPicker.m */; };
+		88867D0C206C89CF00FD5443 /* FAZTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 88867D0A206C89CF00FD5443 /* FAZTimePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		88867CFE206C898500FD5443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88867D00206C898500FD5443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88867D01206C898500FD5443 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		88867D09206C89CF00FD5443 /* FAZTimerPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAZTimerPicker.h; sourceTree = "<group>"; };
-		88867D0A206C89CF00FD5443 /* FAZTimerPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAZTimerPicker.m; sourceTree = "<group>"; };
+		88867D09206C89CF00FD5443 /* FAZTimePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAZTimePicker.h; sourceTree = "<group>"; };
+		88867D0A206C89CF00FD5443 /* FAZTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAZTimePicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 		88867D08206C89CF00FD5443 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				88867D09206C89CF00FD5443 /* FAZTimerPicker.h */,
-				88867D0A206C89CF00FD5443 /* FAZTimerPicker.m */,
+				88867D09206C89CF00FD5443 /* FAZTimePicker.h */,
+				88867D0A206C89CF00FD5443 /* FAZTimePicker.m */,
 			);
 			name = lib;
 			path = ../../lib;
@@ -120,7 +120,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 88867CEA206C898500FD5443 /* Build configuration list for PBXProject "FAZTimerPickerDemo" */;
+			buildConfigurationList = 88867CEA206C898500FD5443 /* Build configuration list for PBXProject "FAZTimePickerDemo" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -159,7 +159,7 @@
 				88867CF7206C898500FD5443 /* ViewController.m in Sources */,
 				88867D02206C898500FD5443 /* main.m in Sources */,
 				88867CF4206C898500FD5443 /* AppDelegate.m in Sources */,
-				88867D0C206C89CF00FD5443 /* FAZTimerPicker.m in Sources */,
+				88867D0C206C89CF00FD5443 /* FAZTimePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +322,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88867CEA206C898500FD5443 /* Build configuration list for PBXProject "FAZTimerPickerDemo" */ = {
+		88867CEA206C898500FD5443 /* Build configuration list for PBXProject "FAZTimePickerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				88867D03206C898500FD5443 /* Debug */,
