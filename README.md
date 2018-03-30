@@ -3,7 +3,15 @@
 
 
 # 集成代码如下
+增加头文件
+
 ``` Objective-C
+#import "FAZTimePicker.h"
+```
+
+
+``` Objective-C
+
 FAZTimerPicker *datePicker = [[FAZTimerPicker alloc]init];
 
 datePicker.minLimitDate = [NSDate dateWithTimeIntervalSinceNow:7200];
