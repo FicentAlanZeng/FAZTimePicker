@@ -8,8 +8,7 @@
 ``` Objective-C
 #import "FAZTimePicker.h"
 ```
-
-
+代码实现
 ``` Objective-C
 
 FAZTimerPicker *datePicker = [[FAZTimerPicker alloc]init];
