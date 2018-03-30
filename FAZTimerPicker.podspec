@@ -39,8 +39,8 @@ datePicker.commitBlock = ^(NSDate *date,NSString *dateString)
 
     "
 
-  s.homepage     = "https://github.com/FicentAlanZeng/TimePicker"
-  s.screenshots  = "https://github.com/FicentAlanZeng/TimePicker/blob/master/image.gif?raw=true"
+  s.homepage     = "https://github.com/FicentAlanZeng/FAZTimePicker"
+  s.screenshots  = "https://github.com/FicentAlanZeng/FAZTimePicker/blob/master/image.gif?raw=true"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ datePicker.commitBlock = ^(NSDate *date,NSString *dateString)
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/FicentAlanZeng/TimePicker.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/FicentAlanZeng/FAZTimePicker.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
